@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/task-calendar',
   supportedLocales: {
   "en-US": ""
 },
