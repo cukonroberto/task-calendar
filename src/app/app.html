@@ -2,3 +2,5 @@
 <p style="text-align: center">
   Selected date: {{ selectedDate | date: 'fullDate' }}
 </p>
+
+<app-task-list [tasks]="getTasksForSelectedDate()"></app-task-list>
