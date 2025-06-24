@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Calendar } from './components/calendar/calendar';
 import { CommonModule } from '@angular/common';
 import { Task } from './models/task.model';
@@ -7,7 +6,7 @@ import { TaskList } from './components/task-list/task-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Calendar, CommonModule, TaskList],
+  imports: [Calendar, CommonModule, TaskList],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

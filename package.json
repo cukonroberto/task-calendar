@@ -10,7 +10,7 @@
     "test": "ng test",
     "serve:ssr:task-calendar": "node dist/task-calendar/server/server.mjs",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist/task-calendar"
+    "deploy": "gh-pages -d dist/task-calendar/browser"
   },
   "private": false,
   "dependencies": {
