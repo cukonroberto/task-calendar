@@ -1,13 +1,16 @@
 {
   "name": "task-calendar",
   "version": "0.3.0",
+  "homepage": "https://cukonroberto.github.io/task-calendar",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:task-calendar": "node dist/task-calendar/server/server.mjs"
+    "serve:ssr:task-calendar": "node dist/task-calendar/server/server.mjs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist/task-calendar"
   },
   "private": false,
   "dependencies": {
@@ -32,6 +35,7 @@
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
+    "gh-pages": "^6.3.0",
     "jasmine-core": "~5.7.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
